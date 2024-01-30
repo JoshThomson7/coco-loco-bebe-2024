@@ -1,0 +1,22 @@
+// Fonts
+$primaryFont: 'Objectivity', sans-serif;
+$secondaryFont: 'Objectivity', sans-serif;
+$headingFont: 'Cocon Regular'; 
+$baseFontSize: 16px;
+$baseFontColor: #0C3647;
+
+// Colours
+$primary: #13769E;
+$primaryLight: #F6F2FD;
+$secondary: #E51D3E;
+$tertiary: #55BCB5;
+$quaternary: #CAD507;
+$lightgrey: #eef0fb;
+$text: $baseFontColor;
+$textLight: #3D5964;
+$border: #d6dbe1;
+$white: #fff;
+$borderDark: lighten($text, 35%);
+$success: #64c82d;
+$warning: #ffc458;
+$error: tomato;
