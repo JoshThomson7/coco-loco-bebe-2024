@@ -12,6 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 class AVB_Banner {
 
     public $data;
+    public $post;
 
     /**
      * Instantiate class and set its properties
@@ -77,9 +78,7 @@ class AVB_Banner {
     /**
      * Returns the main banner heading
      */
-    public function heading() {
-
-        if($this->get_prop('heading_hide')) return false;
+    public function heading($html = true) {
 
         $heading = '';
         $h = $this->index() === 1 ? '1' : '2';
@@ -88,6 +87,12 @@ class AVB_Banner {
             $heading = $this->get_prop('heading') ?? null;
         } else {
             $heading = $this->get_prop('heading') ? $this->get_prop('heading') : get_the_title($this->post->ID);
+        }
+
+        if(!$html) return $heading;
+
+        if($this->get_prop('heading_hide')) {
+            $h .= ' class="hidden"';
         }
 
         return '<h'.$h.'>'.$heading.'</h'.$h.'>';
@@ -108,8 +113,21 @@ class AVB_Banner {
      * Returns the banner caption
      */
     public function caption() {
+		
+		$caption = $this->get_prop('caption') ?? null;
 
-        return $this->get_prop('caption') ?? null;
+        return $caption; 
+
+    }
+
+    /**
+     * Returns the banner sub-caption
+     */
+    public function sub_caption() {
+		
+		$sub_caption = $this->get_prop('sub-caption') ?? null;
+
+        return $sub_caption; 
 
     }
     
@@ -118,8 +136,7 @@ class AVB_Banner {
      */
     public function button_label() {
 
-		$button = $this->get_prop('button_main');
-        return $button['label'] ?? null;
+        return $this->get_prop('button_label') ?? null;
 
     }
     
@@ -128,8 +145,7 @@ class AVB_Banner {
      */
     public function button_url() {
 
-		$button = $this->get_prop('button_main');
-        return $button['link'] ?? null;
+        return $this->get_prop('button_url') ?? null;
 
     }
     
@@ -138,7 +154,7 @@ class AVB_Banner {
      */
     public function button_url_target() {
 
-		if (strpos($this->button_url(), $_SERVER['HTTP_HOST']) !== false) {
+		if (strpos($this->get_prop('button_url'), $_SERVER['HTTP_HOST']) !== false) {
 			$target = ' target="_blank"';
 		}
 
@@ -149,8 +165,7 @@ class AVB_Banner {
      */
     public function button_2_label() {
 
-        $button = $this->get_prop('button_secondary');
-        return $button['label'] ?? null;
+        return $this->get_prop('button_2_label') ?? null;
 
     }
     
@@ -159,8 +174,7 @@ class AVB_Banner {
      */
     public function button_2_url() {
 
-        $button = $this->get_prop('button_secondary');
-        return $button['link'] ?? null;
+        return $this->get_prop('button_2_url') ?? null;
 
     }
     
@@ -169,7 +183,7 @@ class AVB_Banner {
      */
     public function button_2_url_target() {
 
-		if (strpos($this->button_2_url(), $_SERVER['HTTP_HOST']) !== false) {
+		if (strpos($this->get_prop('button_2_url'), $_SERVER['HTTP_HOST']) !== false) {
 			$target = ' target="_blank"';
 		}
 
@@ -193,13 +207,26 @@ class AVB_Banner {
         $image_url = '';
         if($image_id) { 
             $image_url = vt_resize($image_id, '', $width, $height, $crop);
-            return isset($image_url[$return]) ? $image_url[$return] : null;
+			if(is_array($image_url)) {
+            	return isset($image_url[$return]) ? $image_url[$return] : null;
+			}
+			return null;
         }
 
         return null;
 
     }
 
+
+    /**
+     * Returns the banner slide_duration
+     */
+    public function duration() {
+
+        $duration = $this->get_prop('slide_duration');
+		return $duration ? $duration * 1000 : 5000;
+
+    }
 
     /**
      * Returns the banner avb_dots_position

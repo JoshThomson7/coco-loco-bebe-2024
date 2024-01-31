@@ -13,6 +13,7 @@
 
 global $post;
 
+$banner_height = get_field('avb_height');
 $banner_dots_position = get_field('avb_dots_position');
 $banner_down_arrow = get_field('avb_down_arrow');
 $banners = get_field('avb');
@@ -24,7 +25,7 @@ if(!empty($banners)):
 
     <section class="avb">
 
-        <div class="avb-banners avb-dots-<?php echo $banner_dots_position; ?> <?php echo $avb_page; ?> <?php echo $has_form; ?>">
+        <div class="avb-banners avb-dots-<?php echo $banner_dots_position; ?> <?php echo $avb_page; ?>">
             <?php
                 $avb_count = 1;
                 foreach($banners as $banner_data):
@@ -33,38 +34,53 @@ if(!empty($banners)):
                 $banner = new AVB_Banner($banner_data);
             ?>
                 
-                <div class="avb-banner" data-type="<?php echo $banner->layout(); ?>">
+                <div class="avb-banner" data-type="<?php echo $banner->layout(); ?>" data-duration="<?php echo $banner->duration(); ?>">
 
                     <div class="avb-banner__caption">
                         <div class="max__width">
                             <div class="avb-banner__caption-wrap">
-                                <?php if($banner->get_prop('logo')): ?><figure><?php echo $banner->logo(); ?></figure><?php endif; ?>
+                                <?php
+                                    if($banner->get_prop('logo')):
+                                    $small_logo = $banner->get_prop('logo_small') ? 'small' : '';
+                                ?>
+                                    <figure class="<?php echo $small_logo; ?>"><?php echo $banner->logo(); ?></figure>
+                                <?php endif; ?>
                                 <?php if($banner->headingTop()): ?><?php echo $banner->headingTop(); ?><?php endif; ?>
                                 <?php if($banner->heading()): ?><?php echo $banner->heading(); ?><?php endif; ?>
-                                <?php if($banner->caption()): ?><p><?php echo $banner->caption(); ?></p><?php endif; ?>
+                                <?php if($banner->caption()): ?><h3><?php echo $banner->caption(); ?></h3><?php endif; ?>
+								<?php echo $banner->sub_caption() ? '<div class="sub-caption">'.$banner->sub_caption().'</div>' : ''; ?>
 
-								<?php if($banner->button_label() || $banner->button_2_label()): ?>
+                                <?php if($banner->button_label() || $banner->button_2_label()): ?>
                                     <div class="avb-banner__caption-actions">
 										<?php if($banner->button_label()): ?>
-											<a href="<?php echo $banner->button_url(); ?>"<?php echo $banner->button_url_target(); ?> title="<?php echo $banner->button_label(); ?>" class="button white">
-												<span><?php echo $banner->button_label(); ?> <i class="fa fa-arrow-right"></i></span>
+											<a href="<?php echo $banner->button_url(); ?>"<?php echo $banner->button_url_target(); ?> title="<?php echo $banner->button_label(); ?>" class="button primary">
+												<span><?php echo $banner->button_label(); ?></span>
 											</a>
 										<?php endif; ?>
 
 										<?php if($banner->button_2_label()): ?>
-											<a href="<?php echo $banner->button_2_url(); ?>"<?php echo $banner->button_2_url_target(); ?> title="<?php echo $banner->button_2_label(); ?>" class="button white border">
+											<a href="<?php echo $banner->button_2_url(); ?>"<?php echo $banner->button_2_url_target(); ?> title="<?php echo $banner->button_2_label(); ?>" class="button primary">
 												<span><?php echo $banner->button_2_label(); ?></span>
 											</a>
 										<?php endif; ?>
                                     </div>
                                 <?php endif; ?>
                             </div>
-
-                            <div class="avb-banner__media <?php echo $banner->layout(); ?>">
-                                <?php include AVB_PATH.'templates/'.$banner->layout().'.php'; ?>
-                            </div>
                         </div>
                     </div>
+                        
+                    <figure class="avb-banner__overlay <?php echo $banner->overlay_opacity(); ?>"></figure>
+
+                    <div class="avb-banner__media">
+                        <?php include AVB_PATH.'templates/'.$banner->layout().'.php'; ?>
+
+                        <?php if($banner->get_prop('image_mobile')): ?>
+                            <div class="avb-banner__medium show-on-mobile image" style="background-image:url(<?php echo $banner->image_mobile(); ?>);">
+                                <img data-lazy="<?php echo $banner->image_mobile(); ?>">
+                            </div>
+                        <?php endif; ?>
+                    </div>
+
                 </div>
 
             <?php $avb_count++; endforeach; ?>

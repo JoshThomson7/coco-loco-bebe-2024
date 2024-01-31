@@ -5,7 +5,7 @@ header.header {
     width: 100%;
     transition: all 0.4s ease;
     width: 100%;
-	position: relative;
+	position: fixed;
 	z-index: 3;
     // background: $primary;
 
@@ -31,7 +31,7 @@ header.header {
     .header__main {
         position: relative;
 		z-index: 1;
-        padding: var(--fl1-spacing-xs) 0;
+        // padding: var(--fl1-spacing-xs) 0;
 		// border-bottom: 1px solid var(--fl1-border);
 
         .max__width {
@@ -50,7 +50,7 @@ header.header {
             }
 
             .logo {
-                width: 274px;
+                width: 137px;
                 transition: all 0.4s ease;
                 margin-right: var(--fl1-spacing-xs);
             }

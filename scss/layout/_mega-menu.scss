@@ -1,5 +1,4 @@
 nav.mega-menu {
-    margin-left: 20px;
     @include breakpoint(1060px) {
         display: none;
     }

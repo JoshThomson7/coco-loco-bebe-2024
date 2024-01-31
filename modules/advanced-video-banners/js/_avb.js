@@ -7,6 +7,7 @@
         if(slideWrapper.length > 0) {
 
             var iframes = slideWrapper.find('.embed-player'),
+			firstSlide = slideWrapper.find('.avb-banner').first() ?? 6000,
             lazyImages = slideWrapper.find('.avb-banner__medium.image'),
             lazyCounter = 0;
             
@@ -17,18 +18,22 @@
                     playPauseVideo(slick,'play');
                 }, 1000);
                 resizePlayer(iframes, 16/9);
-            }); 
+            });
 
             slideWrapper.on('beforeChange', function(event, slick) {
-                slick = $(slick.$slider);
-                playPauseVideo(slick, 'pause');
+                slider = $(slick.$slider);
+                playPauseVideo(slider, 'pause');
             });
         
             slideWrapper.on('afterChange', function(event, slick) {
-                slick = $(slick.$slider);
+                slider = $(slick.$slider);
                 var wWidth = $('.avb .avb-banners').width();
                 var action = wWidth >= 800 ? 'play' : 'pause';
-                playPauseVideo(slick, action);
+                playPauseVideo(slider, action);
+
+				var duration = slider.find('.slick-current').data('duration');
+				console.log(duration);
+				slider.slick('slickSetOption', 'autoplaySpeed', duration);
             });
 
             slideWrapper.on('lazyLoaded', function(event, slick, image, imageSource) {
@@ -39,9 +44,11 @@
                 }
             });
 
+			console.log(firstSlide.data('duration'));
+
             //start the slider
             slideWrapper.slick({
-                autoplaySpeed: 5000,
+                autoplaySpeed: firstSlide.data('duration'),
                 lazyLoad: 'progressive',
                 speed: 600,
                 arrows: false,
@@ -146,7 +153,7 @@
     // Resize player
     function resizePlayer(iframes, ratio) {
         if (!iframes[0]) return;
-        var win = $('.avb .avb-banners .avb-banner__media'),
+        var win = $('.avb .avb-banners'),
             width = win.width(),
             playerWidth,
             height = win.height(),

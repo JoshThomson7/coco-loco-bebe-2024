@@ -11,26 +11,6 @@ body {
 	&.no__scroll {
 		overflow: hidden;
 	}
-
-	.header-banner {
-		position: relative;
-
-		&::after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			top: 0;
-			left: 0;
-			clip-path: ellipse(1700px 100% at calc((100vw - 1900px) / 2) 0%);
-			background: var(--fl1-primary);
-			z-index: 0;
-
-			@include breakpoint(600px) {
-				height: 115%;
-			}
-		}
-	}
 }
 
 #page {
@@ -41,7 +21,7 @@ body {
 		padding-top: 100px;
 	}
 
-	min-height: 100vh;
+	min-height: 100vh; 
 }
 
 h1,

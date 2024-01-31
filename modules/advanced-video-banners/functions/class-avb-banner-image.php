@@ -11,23 +11,36 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 
 class AVB_Banner_Image extends AVB_Banner {
 
-	public function crop() {
+	private $classes = array('image');
 
-		return $this->get_prop('image_crop');
-
-	}
-
-    public function image($return = 'url', $width = 800, $height = 800, $crop = true) {
+    public function image($return = 'url', $width = 2000, $height = 1400, $crop = true) {
 
         $image_id = $this->get_prop('image');
-        $image_url = '';
-        if($image_id) { 
-            $image_url = vt_resize($image_id, '', $width, $height, $this->crop());
-            return isset($image_url[$return]) ? $image_url[$return] : null;
+        $image = '';
+        if($image_id) {
+            $image = vt_resize($image_id, '', $width, $height, $crop);
+			if(is_array($image)) {
+				$image['alt'] = get_post_meta($image_id, '_wp_attachment_image_alt', true) ?? '';
+				return isset($image[$return]) ? $image[$return] : null;
+			}
+			return null;
         }
 
         return null;
 
     }
+
+	public function classes() {
+
+		if(!$this->image()) {
+			$this->classes[] = 'no-img';
+		}
+
+		if($this->get_prop('image_mobile')) {
+			$this->classes[] = 'hide-on-mobile';
+		}
+
+		return implode(' ', $this->classes);
+	}
 
 }

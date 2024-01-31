@@ -185,20 +185,20 @@
       "oAP" : "\/core\/fl1-helpers.php",
       "oF" : 0
     },
-    "\/fonts\/cocon\/cocon-regular_2_1-webfont.woff" : {
+    "\/fonts\/cocon\/Cocon-Regular..woff" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/fonts\/cocon\/cocon-regular_2_1-webfont.woff",
+      "oAP" : "\/fonts\/cocon\/Cocon-Regular..woff",
       "oF" : 0
     },
-    "\/fonts\/cocon\/cocon-regular_2_1-webfont.woff2" : {
+    "\/fonts\/cocon\/Cocon-Regular..woff2" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/fonts\/cocon\/cocon-regular_2_1-webfont.woff2",
+      "oAP" : "\/fonts\/cocon\/Cocon-Regular..woff2",
       "oF" : 0
     },
     "\/fonts\/cocon\/Cocon-Regular.otf" : {
@@ -331,47 +331,24 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
-    "\/img\/blue-circle.png" : {
-      "ft" : 32768,
-      "iS" : 20608,
-      "oA" : 0,
-      "oAP" : "\/img\/blue-circle.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/img\/fl1-icon.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/img\/fl1-icon.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/img\/heart-logo.png" : {
-      "ft" : 32768,
-      "iS" : 24733,
-      "oA" : 0,
-      "oAP" : "\/img\/heart-logo.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/img\/logo.png" : {
       "ft" : 32768,
-      "iS" : 13108,
+      "iS" : 11327,
       "oA" : 0,
       "oAP" : "\/img\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/polina-kuzovkova-exfO5IC0etk-unsplash-removebg-preview 1.png" : {
+      "ft" : 32768,
+      "iS" : 467513,
+      "oA" : 0,
+      "oAP" : "\/img\/polina-kuzovkova-exfO5IC0etk-unsplash-removebg-preview 1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -8149,7 +8126,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 652874357.77309203,
-    "displayValue" : "withington-baths-2024",
+    "displayValue" : "coco-loco-bebe-2024",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-koamaru",
     "iconImageWasSetByUser" : 0

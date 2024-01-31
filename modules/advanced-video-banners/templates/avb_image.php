@@ -7,16 +7,8 @@
  */
 
 $avb_banner_image = new AVB_Banner_Image($banner_data);
-$avb_banner_image_classes = array();
-
-if($banner->get_prop('image_mobile')) {
-    $avb_banner_image_classes[] = 'hide-on-mobile';
-}
-
-if($banner->get_prop('has_coloured_circles')) {
-    $avb_banner_image_classes[] = 'has-circles';
-}
 ?>
-<div class="avb-banner__medium image <?php echo join(' ', $avb_banner_image_classes); ?>">
-    <img src="<?php echo $avb_banner_image->image(); ?>">
+<div class="avb-banner__medium <?php echo $avb_banner_image->classes(); ?>"
+	<?php echo $avb_banner_image->image() ? 'style="background-image:url('.$avb_banner_image->image().');"' : ''; ?> role="img" alt="<?php echo $avb_banner_image->image('alt'); ?>">
+	<img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/coconut-hand.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
 </div>
