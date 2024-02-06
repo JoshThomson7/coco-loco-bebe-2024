@@ -23,196 +23,29 @@
 
 footer {
 	position: relative;
-	background: var(--fl1-primary);
+	background: url(img/coconut-footer.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	margin-top: auto;
-	// max-width: 1280px;
 	width: 100%;
 	margin: 0 auto;
-	// border-radius: var(--fl1-radius-xxl);
-	// padding: 0 var(--fl1-spacing-xl) 0;
-	// @include breakpoint(sisterbear){padding: 0;}
-
-	.newsletter{
-		// background: linear-gradient(to bottom, rgba(19, 118, 158, 0.5), rgba(19, 118, 158, 0.7)), url('http://withington-baths.wpdev3.com/wp-content/uploads/2024/01/20190705122141-x1-liverpool-one-1.png'); background-size: cover; background-position: center; background-repeat: no-repeat;
-		background: var(--fl1-secondary);
-
-		.footer__signup {
-			// background: var(--fl1-secondary);
-			padding: var(--fl1-spacing-xxl) 0;
-			// border-radius: var(--fl1-radius-xxl);
-			@include breakpoint(sisterbear){padding: 25px;}
-	
-			@include breakpoint(grandpabear) {
-				flex-direction: column;
-				align-items: center;
-			}
-			@include breakpoint(papabear) {
-				margin-bottom: 0;
-			}
-	
-			h3 {
-				font-size: var(--fl1-font-md);
-				font-weight: 700;
-				color: var(--fl1-white);
-				margin-bottom: var(--fl1-spacing-xs);
-			}
-	
-			&__form {
-				flex: 2;
-	
-				.form__row {
-					display: flex;
-	
-					@include breakpoint(brotherbear) {
-						flex-direction: column;
-					}
-	
-					.form__field {
-						margin-right: 16px;
-						flex: 1;
-						@include breakpoint(brotherbear) {
-							margin-left: 0;
-						}
-	
-						@include breakpoint(sisterbear){margin-right: 0;}
-	
-						&.submit {
-							flex: initial;
-							@include breakpoint(brotherbear) {
-								justify-content: center;
-								display: flex;
-							}
-						}
-					}
-	
-					input[type='text'],
-					input[type='email'] {
-						background: var(--fl1-white);
-						padding: 20px;
-						border-radius: var(--fl1-radius-sm);
-						border: none;
-						font-family: var(--fl1-primary-font);
-						font-size: 16px;
-						flex: 1;
-						width: 100%;
-						color: var(--fl1-text);
-						@include breakpoint(grandpabear) {
-							min-width: 240px;
-						}
-						@include breakpoint(brotherbear) {
-							margin-bottom: 10px;
-							width: 100%;
-						}
-	
-						&::-webkit-input-placeholder,
-						&::-moz-placeholder,
-						&:-ms-input-placeholder,
-						&:-moz-placeholder {
-							color: var(--fl1-text-light);
-							transition: all 0.4s ease;
-						}
-					}
-	
-					button {
-						flex-grow: 1;
-						background: var(--fl1-white);
-						border: none;
-						cursor: pointer;
-						text-align: center;
-						position: relative;
-						border-radius: none;
-						font-size: var(--fl1-font-xs);
-						font-weight: 800;
-						color: var(--fl1-primary);
-						padding: 4px 25px 0;
-						font-family: var(--fl1-primary-font);
-						transition: all 0.3s ease;
-						max-width: 225px;
-						border-radius: var(--fl1-radius-xl);
-						height: 100%;
-
-						i{color: var(--fl1-secondary);}
-	
-						&:hover {
-							transition: all 0.3s ease;
-						}
-	
-						@include breakpoint(brotherbear) {
-							padding: 15px 20px;
-							align-self: center;
-						}
-						@include breakpoint(mamabear) {
-							width: 100%;
-							max-width: 100%;
-						}
-					}
-	
-					&.gdpr {
-						text-align: right;
-						padding-top: 8px;
-						@include breakpoint(grandpabear) {
-							text-align: center;
-							justify-content: center;
-						}
-	
-						small {
-							font-size: 12px;
-							line-height: 20px;
-							color: var(--fl1-white);
-						}
-					}
-				}
-			}
-	
-			.footer__social {
-				display: flex;
-				justify-content: flex-end;
-	
-				ul {
-					display: flex;
-					justify-content: flex-end;
-	
-					li {
-						margin-left: 16px;
-						a {
-							svg {
-								height: 24px;
-								path {
-									transition: all 0.3s ease;
-									fill: #fff;
-								}
-							}
-	
-							&:hover {
-								svg {
-									path {
-										fill: $primary;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
 
 	.footer__menus {
-		padding: 56px 0 40px;
+		padding: 55px 30px; margin: 100px 150px; background: white;
 
 		@include breakpoint(papabear) {
 			padding: 0;
 		}
 
 		.max__width {
-			display: flex;
+			display: flex; justify-content: space-between;
 			@include breakpoint(papabear) {
 				flex-direction: column;
 			}
 		}
 
 		article {
-			width: 25%;
+			width: 22%;
 
 			&.align-right {
 				text-align: right;
@@ -230,9 +63,9 @@ footer {
 			}
 
 			h5 {
-				font-size: var(--fl1-font-xs);
+				font-size: 20px;
 				font-weight: 700;
-				color: var(--fl1-white);
+				color: var(--fl1-primary);
 				padding-bottom: 16px;
 				display: flex;
 				align-items: center;
@@ -253,11 +86,11 @@ footer {
 			}
 
 			p {
-				color: var(--fl1-text);
+				color: var(--fl1-primary);
 				font-size: 14px;
 				margin-bottom: 16px;
 				a {
-					color: #fff;
+					color: var(--fl1-primary);
 					&:hover {
 						color: var(--fl1-secondary);
 					}
@@ -276,29 +109,33 @@ footer {
 					list-style: none;
 					line-height: 24px;
 					font-size: 14px;
-					padding-bottom: 4px;
-					color: var(--fl1-border);
+					padding-bottom: 10px;
 					display: flex;
+					align-items: center;
 					@include breakpoint(papabear) {
 						padding-bottom: 10px;
 					}
 
 					i {
-						font-size: 16px;
-						color: var(--fl1-white);
-						width: 22px;
+						font-size: 26px;
+						color: var(--fl1-primary);
+						width: 28px;
 						display: flex;
 						justify-content: center;
-						margin: 0 10px 0 0;
+						margin: 0 12px 0 0;
 					}
 					img {
-						width: 140px;
-						margin-right: 10px;
+						&.flag{
+							width: 28px; height: 18px; margin-right: 10px;
+						}
 					}
 
 					a {
 						font-size: 14px;
-						color: var(--fl1-white);
+						color: var(--fl1-primary);
+						display: flex;
+    					align-items: center;
+
 						&:hover {
 							color: var(--fl1-secondary);
 							opacity: 1;

@@ -1,37 +1,22 @@
 	<?php do_action('before_footer'); ?>
 
 	<footer role="contentinfo">
-		<div class="newsletter">
-			<div class="max__width">
-				<div class="footer__signup">
-					<div id="mc_embed_signup" class="footer__signup__form">
-						<h3>Stay up to date</h3>
-
-						<form action="#" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-							<div class="form__row">
-								<div class="form__field">
-									<input type="text" value="" placeholder="Full name" name="FNAME" class="required email" id="mce-FNAME">
-								</div><!-- form__field -->
-								<div class="form__field">
-									<input type="email" value="" placeholder="Email address" name="EMAIL" class="required email" id="mce-EMAIL">
-								</div><!-- form__field -->
-
-								<div class="form__field submit">
-									<button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Become a member <i class="fa fa-arrow-right"></i></button>
-								</div><!-- form__field -->
-							</div><!-- form__row -->
-						</form>
-
-						<div class="form__row gdpr">
-							<small>We are GDPR compliant and respect your privacy. You can unsubscribe at any time.</small>
-						</div>
-					</div><!-- footer__signup__form -->
-				</div><!-- footer__signup -->
-			</div>
-		</div>
 
 		<div class="footer__menus">
 			<div class="max__width">
+				<article class="footer__menu">
+					<h5>Ready to get Coco Loco?</h5>
+					<ul>
+						<li>
+							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a href="#"><i class="fa fa-twitter"></i></a>
+							<a href="#"><i class="fa fa-facebook-square"></i></a>
+						</li>
+						<li><p>Get in touch to discuss your requirements!</p></li>
+						<li><a href="#" class="button secondary">Contact</a></li>
+					</ul>
+				</article>
+
 				<?php
 				while (have_rows('footer_menus', 'options')) : the_row();
 
@@ -45,23 +30,18 @@
 					</article>
 
 				<?php endwhile; ?>
+
+				<article class="footer__menu">
+					<h5>Connect <i class="fas fa-chevron-down"></i></h5>
+					<ul id="" class="menu">
+						<li><a href="mailto:ceo@cocolocobebe.com"><i class="fal fa-envelope"></i>ceo@cocolocobebe.com</a></li>
+						<li><img class="flag" src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/flag-uk.png'); ?>" alt="UK Flag"/><a href="tel:+447881817796">+447881817796</a></li>
+						<li><img class="flag" src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/flag-spain.png'); ?>" alt="Spain Flag"/><a href="tel:+447881817796">+447881817796</a></li>
+					</ul>											
+				</article>
 			</div>
 		</div>
 	</footer>
-
-	<div class="subfooter">
-			<div class="max__width">
-
-			<div class="subfooter--left">
-				<small>&copy; <?php bloginfo('name') ?> <?php echo date('Y'); ?>. Registered with number: 10246071</small>
-			</div><!-- subfooter--left -->
-
-			<div class="subfooter--right">
-				<small><a href="http://www.fl1.digital" target="_blank">Powered by FL1 Digital</a></small>
-			</div><!-- subfooter--left -->
-
-		</div><!-- max__width -->
-	</div><!-- subfooter -->
 
 	<div class="spotlight-search">
 		<div class="spotlight-search--content">

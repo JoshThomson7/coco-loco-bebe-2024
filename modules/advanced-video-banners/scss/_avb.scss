@@ -114,7 +114,7 @@ section.avb {
 
 				h1,
 				h2 {
-					font-size: 2.5rem;
+					font-size: 50px;
 					color: #fff;
 					padding: 0 0 10px;
 					line-height: 1.4;
@@ -129,12 +129,11 @@ section.avb {
 				}
 
 				h3 {
-					font-size: 1rem;
+					font-size: 20px;
 					font-family: var(--fl1-secondary-font);
 					color: var(--fl1-white);
 					line-height: 1.4;
 					margin-top: var(--fl1-spacing-sm);
-					padding-right: 10%;
 					@include breakpoint(1000px) {
 						padding: 0;
 						font-size: 20px;
@@ -188,7 +187,7 @@ section.avb {
 						justify-content: center;
 					}
 
-					a{background: none; border: 1px solid white;}
+					a{background: none; border: 1px solid white; color: white;}
 				}
 			}
 
@@ -207,16 +206,11 @@ section.avb {
 
 					&.image {
 						height: 100%;
-						background-size: 100%;
-						background-position: center right -50%;
+						background-size: cover;
+						background-position: center;
 						background-repeat: no-repeat;
 						transition: all 0.8s ease;
 						position: relative;
-
-						@include breakpoint(1200px) {
-							background-size: cover;
-							background-position: center right;
-						}
 
 						&:not(.no-img) {
 

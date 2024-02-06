@@ -241,6 +241,30 @@
       "oAP" : "\/fonts\/fa\/fa-light-300.woff2",
       "oF" : 0
     },
+    "\/fonts\/passero\/passeroone-regular-webfont.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/passero\/passeroone-regular-webfont.woff",
+      "oF" : 0
+    },
+    "\/fonts\/passero\/PasseroOne-Regular.ttf" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/passero\/PasseroOne-Regular.ttf",
+      "oF" : 0
+    },
+    "\/fonts\/passero\/PasseroOne-Regular.woff2" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/passero\/PasseroOne-Regular.woff2",
+      "oF" : 0
+    },
     "\/fonts\/x1\/X1-Bold.woff" : {
       "cB" : 0,
       "ft" : 8192,
@@ -331,11 +355,24 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
-    "\/img\/logo.png" : {
-      "ft" : 32768,
-      "iS" : 11327,
+    "\/img\/coconut-footer.jpg" : {
+      "ft" : 16384,
+      "iS" : 1122116,
+      "jF" : 0,
       "oA" : 0,
-      "oAP" : "\/img\/logo.png",
+      "oAP" : "\/img\/coconut-footer.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/coconut-hand.png" : {
+      "ft" : 32768,
+      "iS" : 467513,
+      "oA" : 0,
+      "oAP" : "\/img\/coconut-hand.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -344,11 +381,76 @@
       "q" : 100,
       "rq" : 75
     },
-    "\/img\/polina-kuzovkova-exfO5IC0etk-unsplash-removebg-preview 1.png" : {
+    "\/img\/coconut-small-dark.png" : {
       "ft" : 32768,
-      "iS" : 467513,
+      "iS" : 841,
       "oA" : 0,
-      "oAP" : "\/img\/polina-kuzovkova-exfO5IC0etk-unsplash-removebg-preview 1.png",
+      "oAP" : "\/img\/coconut-small-dark.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/coconut-small-white.png" : {
+      "ft" : 32768,
+      "iS" : 475,
+      "oA" : 0,
+      "oAP" : "\/img\/coconut-small-white.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/flag-spain.png" : {
+      "ft" : 32768,
+      "iS" : 399,
+      "oA" : 0,
+      "oAP" : "\/img\/flag-spain.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/flag-uk.png" : {
+      "ft" : 32768,
+      "iS" : 984,
+      "oA" : 0,
+      "oAP" : "\/img\/flag-uk.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/logo-white-bg.jpeg" : {
+      "ft" : 16384,
+      "iS" : 55190,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/img\/logo-white-bg.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 11327,
+      "oA" : 0,
+      "oAP" : "\/img\/logo.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

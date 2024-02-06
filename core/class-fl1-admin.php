@@ -146,15 +146,7 @@ class FL1_Admin {
     public function acf_hide_menu() {
 
         $admins = array(
-            'fl1digital',
-            'fl1admin',
-            'alex@fl1.digital',
-            'jason@fl1.digital',
-            'niall@fl1.digital',
-            'jose@fl1.digital',
-            'josh@fl1.digital',
-            'emily@fl1.digital',
-            'suzy@fl1.digital',
+            'TWS',
         );
 
         $current_user = wp_get_current_user();

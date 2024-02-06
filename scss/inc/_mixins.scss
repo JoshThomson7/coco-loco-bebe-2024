@@ -133,7 +133,7 @@
         + #{$element} { color: var(--fl1-text); display:flex; cursor: pointer; align-items: center;
             &:before {
                 font-family: "Font Awesome 6 Pro";
-                display: block;
+                display: block; 
                 font-weight: normal;
                 font-size: 19px;
                 color: var(--fl1-primary);

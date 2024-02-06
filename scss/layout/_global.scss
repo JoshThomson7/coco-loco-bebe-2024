@@ -16,7 +16,7 @@ body {
 #page {
 	display: flex;
 	flex-direction: column;
-	background: #f2f9ff;
+	background: #fff;
 	&.sticky {
 		padding-top: 100px;
 	}
@@ -145,8 +145,8 @@ img {
 	}
 
 	&.primary {
-		background: var(--fl1-primary);
-		color: #fff;
+		border: 1px solid var(--fl1-primary);
+		color: var(--fl1-primary);
 
 		&.border {
 			background: transparent;
@@ -161,6 +161,10 @@ img {
 	&.secondary {
 		background: var(--fl1-secondary);
 		color: #fff;
+
+		&:hover{
+			color: #fff;
+		}
 
 		&.border {
 			background: transparent;

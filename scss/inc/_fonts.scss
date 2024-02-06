@@ -35,6 +35,12 @@
          url('fonts/cocon/Cocon-Regular..woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
+@font-face {
+    font-family: 'Passero'; 
+    src: url('fonts/passero/PasseroOne-Regular.woff2') format('woff2'),
+         url('fonts/passero/PasseroOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

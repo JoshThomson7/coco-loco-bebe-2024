@@ -52,32 +52,7 @@ Icon Grid
 
             .icon-grid__icon { max-width: 150px; display: flex; margin-bottom: 20px;
                 span { 
-					font-size: var(--fl1-font-xxl); color: var(--fl1-secondary); display: flex; justify-content: center; align-items: center; overflow: hidden;
-					
-					&.tlc-theme-write {
-						color: var(--tlc-write);
-					}
-					&.tlc-theme-spell {
-						color: var(--tlc-spell);
-					}
-					&.tlc-theme-read {
-						color: var(--tlc-read);
-					}
-					&.tlc-theme-progress {
-						color: var(--tlc-progress);
-					}
-					&.tlc-theme-poetry {
-						color: var(--tlc-poetry);
-					}
-					&.tlc-theme-parents {
-						color: var(--tlc-parents);
-					}
-					&.tlc-theme-learning {
-						color: var(--tlc-home-learning);
-					}
-					&.tlc-theme-gray {
-						color: var(--fl1-text);
-					}
+					font-size: var(--fl1-font-xxl); color: var(--fl1-white); display: flex; justify-content: center; align-items: center; overflow: hidden; background: var(--fl1-secondary); border-radius: 50%; width: 70px; height: 70px;
 				}
             }
 
