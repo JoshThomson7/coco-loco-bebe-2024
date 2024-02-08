@@ -42,7 +42,7 @@ section.avb {
 			display: flex;
 			align-items: center;
 			min-height: 35rem;
-			height: 100vh; 
+			height: 680px; 
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
 			transform: translateZ(0) scale(1, 1);
@@ -229,7 +229,7 @@ section.avb {
 							@include breakpoint(teenbear){
 								width: 280px;
 								position: relative;
-								bottom: -60%;
+								bottom: -55%;
 								left: calc(50% - 140px);
 							}
 						}
