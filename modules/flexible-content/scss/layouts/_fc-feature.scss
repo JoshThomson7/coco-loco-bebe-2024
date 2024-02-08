@@ -46,6 +46,10 @@ Feature
 				font-weight: 700;
 				color: var(--fl1-secondary);
 				margin-bottom: 20px;
+
+				@include breakpoint(teenbear){
+					line-height: 1.1; margin-top: 10px;
+				}
 			}
 			h5 {
 				font-size: 20px;
@@ -218,7 +222,7 @@ Feature
 				}
 
 				@include breakpoint(mamabear) {
-					padding: var(--fl1-spacing-lg);
+					padding: var(--fl1-spacing-lg); border-left: 0;
 				}
 			}
 		}
@@ -288,6 +292,7 @@ Feature
 
 			.feature__text {
 				border-left: 40px solid transparent;
+				@include breakpoint(teenbear){border-left: 0;}
 			}
 
 			&.right {

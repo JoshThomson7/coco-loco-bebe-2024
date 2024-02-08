@@ -5,7 +5,7 @@
 		<div class="footer__menus">
 			<div class="max__width">
 				<article class="footer__menu">
-					<h5>Ready to get Coco Loco?</h5>
+					<h5>Ready to get Coco Loco? <i class="fas fa-chevron-down"></i></h5>
 					<ul>
 						<li>
 							<a href="#"><i class="fa fa-instagram"></i></a>

@@ -37,6 +37,10 @@ footer {
 			padding: 0;
 		}
 
+		@include breakpoint(teenbear) {
+			margin: 30px 20px;
+		}
+
 		.max__width {
 			display: flex; justify-content: space-between;
 			@include breakpoint(papabear) {

@@ -89,7 +89,7 @@ header.header {
             display: none;
             margin-right: 5px;
             @include breakpoint(1060px) {
-                display: block;
+                display: none;
             }
 
             i {

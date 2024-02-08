@@ -50,8 +50,8 @@ section.avb {
 			overflow: hidden;
 
 			@include breakpoint(papabear) {
-				height: auto;
-				min-height: 200px;
+				// height: auto;
+				// min-height: 200px;
 			}
 
 			@for $i from 25 through 100 {
@@ -79,7 +79,7 @@ section.avb {
 				.max__width{display: flex; justify-content: space-between;}
 
 				.avb-banner__caption-wrap {
-					width: 40%;
+					width: 50%;
 
 					figure {
 						margin-bottom: 20px;
@@ -120,6 +120,9 @@ section.avb {
 					line-height: 1.4;
 					@include breakpoint(papabear) {
 						font-size: 2.75rem;
+					}
+					@include breakpoint(teenbear) {
+						line-height: 1.1;
 					}
 
 					&.hidden {
@@ -182,9 +185,9 @@ section.avb {
 					justify-content: flex-start;
 					gap: 8px;
 					@include breakpoint(cousinbear) {
-						margin-top: auto;
+						margin-top: 30px;
 						width: 100%;
-						justify-content: center;
+						justify-content: flex-start;
 					}
 
 					a{background: none; border: 1px solid white; color: white;}
@@ -223,6 +226,12 @@ section.avb {
 
 						img{
 							width: 400px; position: relative; bottom: -42%; left: calc(50% - 200px);
+							@include breakpoint(teenbear){
+								width: 280px;
+								position: relative;
+								bottom: -60%;
+								left: calc(50% - 140px);
+							}
 						}
 					}
 
@@ -272,9 +281,9 @@ section.avb {
 							background: rgba(0, 0, 0, $alpha);
 						}
 
-						@include breakpoint(teenbear) {
-							background: #000;
-						}
+						// @include breakpoint(teenbear) {
+						// 	background: #000;
+						// }
 					}
 				}
 			}
