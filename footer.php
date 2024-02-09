@@ -1,6 +1,6 @@
 	<?php do_action('before_footer'); ?>
 
-	<footer role="contentinfo">
+	<footer role="contentinfo" id="footer">
 
 		<div class="footer__menus">
 			<div class="max__width">
@@ -8,13 +8,19 @@
 					<h5>Ready to get Coco Loco? <i class="fas fa-chevron-down"></i></h5>
 					<ul>
 						<li>
-							<a href="#"><i class="fa fa-instagram"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-facebook-square"></i></a>
+							<a href="https://www.instagram.com/coco.loco.bebe/" target="_blank"><i class="fa fa-instagram"></i></a>
 						</li>
 						<li><p>Get in touch to discuss your requirements!</p></li>
-						<li><a href="#" class="button secondary">Contact</a></li>
 					</ul>
+				</article>
+
+				<article class="footer__menu">
+					<h5>Connect <i class="fas fa-chevron-down"></i></h5>
+					<ul id="" class="menu">
+						<li><a href="mailto:ceo@cocolocobebe.com"><i class="fal fa-envelope"></i>ceo@cocolocobebe.com</a></li>
+						<li><img class="flag" src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/flag-spain.png'); ?>" alt="Spain Flag"/><a href="tel:+34711047146">+34711047146</a></li>
+						<li><img class="flag" src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/flag-uk.png'); ?>" alt="UK Flag"/><a href="tel:+447881817796">+447881817796</a></li>
+					</ul>											
 				</article>
 
 				<?php
@@ -30,15 +36,6 @@
 					</article>
 
 				<?php endwhile; ?>
-
-				<article class="footer__menu">
-					<h5>Connect <i class="fas fa-chevron-down"></i></h5>
-					<ul id="" class="menu">
-						<li><a href="mailto:ceo@cocolocobebe.com"><i class="fal fa-envelope"></i>ceo@cocolocobebe.com</a></li>
-						<li><img class="flag" src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/flag-uk.png'); ?>" alt="UK Flag"/><a href="tel:+447881817796">+447881817796</a></li>
-						<li><img class="flag" src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/flag-spain.png'); ?>" alt="Spain Flag"/><a href="tel:+447881817796">+447881817796</a></li>
-					</ul>											
-				</article>
 			</div>
 		</div>
 	</footer>

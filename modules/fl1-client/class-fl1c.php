@@ -92,4 +92,4 @@ class FL1_Client {
 }
 
 // Release the Kraken!
-new FL1_Client('Withington Baths', 'Withington Baths', 'fl1-client');
+new FL1_Client('Coco Loco Bebe', 'Coco Loco Bebe', 'fl1-client');

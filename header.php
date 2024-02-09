@@ -19,15 +19,14 @@
 			<div class="header__main">
 				<div class="max__width">
 					<div class="header__main--left">
-						<a href="#nav_mobile" class="burger__menu">
-							<i class="fal fa-bars"></i>
-						</a>
-
-						<?php include get_stylesheet_directory().'/modules/mega-menu.php'; ?>
+						<?php echo do_shortcode('[gtranslate]'); ?>
+						<span>Choose Language</span>
 					</div>
 
 					<div class="header__main--right">
-						
+						<div class="logo">
+							<img src="<?php echo esc_url(get_stylesheet_directory_uri().'/img/logo.png'); ?>" alt="<?php bloginfo('name'); ?>"/>
+						</div>
 					</div>
 				</div><!-- max__width -->
 			</div><!-- header__main -->

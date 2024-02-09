@@ -6,7 +6,7 @@
 	.grid__boxes__wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -16px;
+		// margin: 0 -16px;
 
 		article {
 			display: flex;
@@ -142,7 +142,7 @@
 				@include breakpoint(1000px) {
 					width: 50%;
 				}
-				@include breakpoint(sisterbear){width: 100%;}
+				@include breakpoint(700px0){width: 100%;}
 			}
 			&.one__fourth {
 				width: math.percentage(math.div(1, 4));

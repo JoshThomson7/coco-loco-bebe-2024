@@ -241,20 +241,20 @@
       "oAP" : "\/fonts\/fa\/fa-light-300.woff2",
       "oF" : 0
     },
-    "\/fonts\/passero\/passeroone-regular-webfont.woff" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/fonts\/passero\/passeroone-regular-webfont.woff",
-      "oF" : 0
-    },
     "\/fonts\/passero\/PasseroOne-Regular.ttf" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/fonts\/passero\/PasseroOne-Regular.ttf",
+      "oF" : 0
+    },
+    "\/fonts\/passero\/PasseroOne-Regular.woff" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/fonts\/passero\/PasseroOne-Regular.woff",
       "oF" : 0
     },
     "\/fonts\/passero\/PasseroOne-Regular.woff2" : {
@@ -355,6 +355,32 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
+    "\/img\/coconut-blue-bg-2.png" : {
+      "ft" : 32768,
+      "iS" : 150817,
+      "oA" : 0,
+      "oAP" : "\/img\/coconut-blue-bg-2.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/coconut-blue-bg.png" : {
+      "ft" : 32768,
+      "iS" : 148123,
+      "oA" : 0,
+      "oAP" : "\/img\/coconut-blue-bg.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/coconut-footer.jpg" : {
       "ft" : 16384,
       "iS" : 1122116,
@@ -370,7 +396,7 @@
     },
     "\/img\/coconut-hand.png" : {
       "ft" : 32768,
-      "iS" : 467513,
+      "iS" : 447571,
       "oA" : 0,
       "oAP" : "\/img\/coconut-hand.png",
       "oF" : 0,
@@ -399,6 +425,32 @@
       "iS" : 475,
       "oA" : 0,
       "oAP" : "\/img\/coconut-small-white.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/coconut-tree-flipped.png" : {
+      "ft" : 32768,
+      "iS" : 82425,
+      "oA" : 0,
+      "oAP" : "\/img\/coconut-tree-flipped.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/coconut-tree.png" : {
+      "ft" : 32768,
+      "iS" : 82702,
+      "oA" : 0,
+      "oAP" : "\/img\/coconut-tree.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -448,9 +500,22 @@
     },
     "\/img\/logo.png" : {
       "ft" : 32768,
-      "iS" : 11327,
+      "iS" : 77527,
       "oA" : 0,
       "oAP" : "\/img\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/img\/old_coconut-hand.png" : {
+      "ft" : 32768,
+      "iS" : 467513,
+      "oA" : 0,
+      "oAP" : "\/img\/old_coconut-hand.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,

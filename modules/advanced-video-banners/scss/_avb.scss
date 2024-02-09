@@ -42,7 +42,7 @@ section.avb {
 			display: flex;
 			align-items: center;
 			min-height: 35rem;
-			height: 680px; 
+			height: 100vh; 
 			-webkit-backface-visibility: hidden;
 			backface-visibility: hidden;
 			transform: translateZ(0) scale(1, 1);
@@ -67,7 +67,7 @@ section.avb {
 				display: flex;
 				align-items: center;
 				width: 100%;
-				padding: 6rem 0;
+				padding: 6rem 0 0;
 
 				@include breakpoint(cousinbear) {
 					padding: 3rem 0;
@@ -76,10 +76,14 @@ section.avb {
 					}
 				}
 
+				@include breakpoint(teenbear) {
+					padding: 5rem 0 0;
+				}
+
 				.max__width{display: flex; justify-content: space-between;}
 
 				.avb-banner__caption-wrap {
-					width: 50%;
+					width: 47%;
 
 					figure {
 						margin-bottom: 20px;
@@ -215,21 +219,16 @@ section.avb {
 						transition: all 0.8s ease;
 						position: relative;
 
-						&:not(.no-img) {
-
-						}
-
 						&.no-img {
 							background-image: url('img/banner-v-no-img.jpg');
 							background-size: cover;
 						}
 
 						img{
-							width: 400px; position: relative; bottom: -42%; left: calc(50% - 200px);
+							width: 400px; position: absolute; bottom: 0; left: calc(50% - 200px);
 							@include breakpoint(teenbear){
 								width: 280px;
-								position: relative;
-								bottom: -55%;
+								bottom: 0;
 								left: calc(50% - 140px);
 							}
 						}

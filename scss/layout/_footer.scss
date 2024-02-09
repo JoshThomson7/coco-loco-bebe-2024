@@ -31,7 +31,8 @@ footer {
 	margin: 0 auto;
 
 	.footer__menus {
-		padding: 55px 30px; margin: 100px 150px; background: white;
+		padding: 45px 30px 30px; margin: 100px 150px; background: white;
+		@include breakpoint(1250px){ padding: 40px 20px; margin: 70px 50px;}
 
 		@include breakpoint(papabear) {
 			padding: 0;

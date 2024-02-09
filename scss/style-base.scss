@@ -53,12 +53,37 @@
 //   }
 // } 
 
+html {
+  scroll-behavior: smooth; 
+}
+
 .home{
   .fc_feature, .fc_icon_grid{
     background: #effbff;
   }
+
+  .fc_icon_grid, .fc_feature{
+    background-image: url('img/coconut-blue-bg-2.png'); background-position: center; background-size: cover; background-repeat: no-repeat;
+    @include breakpoint(sisterbear){background-position: right;}
+  }
+
+  .fc_grid_boxes{
+    &:nth-child(1){
+      background-image: url('img/coconut-tree.png'); background-position: right; background-size: contain; background-repeat: no-repeat;
+      @include breakpoint(sisterbear){background-position: bottom;}
+    }
+  }
+
+  #solutions_section{
+    background-image: url('img/coconut-tree-flipped.png'); background-position: left; background-size: contain; background-repeat: no-repeat;
+    @include breakpoint(sisterbear){background-position: bottom;}
+  } 
 }
 
 .fal, .far{
   font-family: "Font Awesome 6 Pro"!important;
+}
+
+a.glink img{
+  width: 35px;
 }
