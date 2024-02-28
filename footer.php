@@ -11,6 +11,7 @@
 							<a href="https://www.instagram.com/coco.loco.bebe/" target="_blank"><i class="fa fa-instagram"></i></a>
 						</li>
 						<li><p>Get in touch to discuss your requirements!</p></li>
+						<li><p style="maargin-top: 20px;">Coco Loco Bebe S.L.</p></li>
 					</ul>
 				</article>
 
