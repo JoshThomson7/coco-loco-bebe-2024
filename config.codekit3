@@ -355,6 +355,19 @@
       "ou" : "lpckwebp-none",
       "rq" : 75
     },
+    "\/img\/coco-hand-iso-min.png" : {
+      "ft" : 32768,
+      "iS" : 1757070,
+      "oA" : 0,
+      "oAP" : "\/img\/coco-hand-iso-min.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/coconut-blue-bg-2.png" : {
       "ft" : 32768,
       "iS" : 150817,
@@ -500,7 +513,7 @@
     },
     "\/img\/logo.png" : {
       "ft" : 32768,
-      "iS" : 77527,
+      "iS" : 11327,
       "oA" : 0,
       "oAP" : "\/img\/logo.png",
       "oF" : 0,

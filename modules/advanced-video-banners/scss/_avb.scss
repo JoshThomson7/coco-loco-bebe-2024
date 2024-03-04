@@ -225,9 +225,9 @@ section.avb {
 						}
 
 						img{
-							width: 400px; position: absolute; bottom: 0; left: calc(50% - 200px);
+							width: 600px; position: absolute; bottom: 0; left: calc(50% - 200px);
 							@include breakpoint(teenbear){
-								width: 280px;
+								width: 480px;
 								bottom: 0;
 								left: calc(50% - 140px);
 							}
