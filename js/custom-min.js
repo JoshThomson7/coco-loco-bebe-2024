@@ -5184,6 +5184,7 @@ return t=a?function(t){return t&&a(r(t))}:function(t){return t&&r(t)}}function e
         if(slideWrapper.length > 0) {
 
             var iframes = slideWrapper.find('.embed-player'),
+			firstSlide = slideWrapper.find('.avb-banner').first() ?? 6000,
             lazyImages = slideWrapper.find('.avb-banner__medium.image'),
             lazyCounter = 0;
             
@@ -5194,18 +5195,22 @@ return t=a?function(t){return t&&a(r(t))}:function(t){return t&&r(t)}}function e
                     playPauseVideo(slick,'play');
                 }, 1000);
                 resizePlayer(iframes, 16/9);
-            }); 
+            });
 
             slideWrapper.on('beforeChange', function(event, slick) {
-                slick = $(slick.$slider);
-                playPauseVideo(slick, 'pause');
+                slider = $(slick.$slider);
+                playPauseVideo(slider, 'pause');
             });
         
             slideWrapper.on('afterChange', function(event, slick) {
-                slick = $(slick.$slider);
+                slider = $(slick.$slider);
                 var wWidth = $('.avb .avb-banners').width();
                 var action = wWidth >= 800 ? 'play' : 'pause';
-                playPauseVideo(slick, action);
+                playPauseVideo(slider, action);
+
+				var duration = slider.find('.slick-current').data('duration');
+				console.log(duration);
+				slider.slick('slickSetOption', 'autoplaySpeed', duration);
             });
 
             slideWrapper.on('lazyLoaded', function(event, slick, image, imageSource) {
@@ -5216,9 +5221,11 @@ return t=a?function(t){return t&&a(r(t))}:function(t){return t&&r(t)}}function e
                 }
             });
 
+			console.log(firstSlide.data('duration'));
+
             //start the slider
             slideWrapper.slick({
-                autoplaySpeed: 5000,
+                autoplaySpeed: firstSlide.data('duration'),
                 lazyLoad: 'progressive',
                 speed: 600,
                 arrows: false,
@@ -5323,7 +5330,7 @@ return t=a?function(t){return t&&a(r(t))}:function(t){return t&&r(t)}}function e
     // Resize player
     function resizePlayer(iframes, ratio) {
         if (!iframes[0]) return;
-        var win = $('.avb .avb-banners .avb-banner__media'),
+        var win = $('.avb .avb-banners'),
             width = win.width(),
             playerWidth,
             height = win.height(),
@@ -5890,70 +5897,6 @@ jQuery(document).ready(function($) {
 	
 });
 
-/**
- * GF JS
- */
-
-(function ($, root, undefined) {
-
-	// window load
-	$(window).on('load', function() {
-		
-		$(document).on('click', 'a[data-gf-ajax-trigger]', function(e) {
-			e.preventDefault();
-			gf_form_ajax($(this));
-		});
-	
-		$(document).on('click', '.gf__modal__form .close', function(e) {
-			e.preventDefault();
-	
-			// hide pop-up
-			$('.gf__modal__form__overlay').removeClass('open');
-			$(this).closest('.flexible__content').removeAttr('style');
-			$('body').removeClass('no__scroll');
-	
-			setTimeout(function() {
-				$('[id^="gf_ajax_form_"]').html('');
-			}, 500);
-	
-		});
-
-	});
-
-	function gf_form_ajax(el) {
-	
-		// set variables
-		var gf_id = el.attr('data-gf-id');
-	
-		// show pop-up
-		$('.gf__modal__form .wp__loading').addClass('is__loading');
-		$('.gf__modal__form__overlay').addClass('open');
-		$('body').addClass('no__scroll');
-	
-		// AJAX results
-		$.ajax({
-			url: fl1_ajax_object.ajaxUrl,
-			dataType: 'html',
-			type: 'GET',
-			data: ({
-				'action' : 'gf_ajax_form',
-				'security' : fl1_ajax_object.ajaxNonce,
-				'gf_id' : gf_id,
-			}),
-	
-			success: function(data) {
-				$('.wp__loading').removeClass('is__loading');
-				$('#gf_ajax_form_'+gf_id).html(data);
-			},
-	
-			error: function(xhr, ajaxOptions, thrownError){
-				alert(xhr.status);
-			}
-		});
-	}
-
-}(jQuery));
-
 // JS Awesomeness
 
 /*
@@ -5985,19 +5928,18 @@ jQuery(document).ready(function($) {
 // Modules
 // @codekit-prepend "../modules/advanced-video-banners/js/_avb.js";
 // @codekit-prepend "../modules/flexible-content/js/_flexible-content.js";
-// @codekit-prepend "../modules/gravity-forms/js/_gf.js";
 
 jQuery(function($) {
 
     $().loadDependencies();
     $().tooltips();
-    //$().stickyMenu();
     $().mobileMenu('nav#nav_mobile', 'left');
     $().smoothScroll();
     $().chosenSelect();
     $().footerAccordion();
     $().lazyLoad();
     $().spotlight();
+    //$().stickyMenu();
 
 	/**
 	 * Video Pop Up

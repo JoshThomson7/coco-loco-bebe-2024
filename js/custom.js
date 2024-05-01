@@ -29,19 +29,18 @@
 // Modules
 // @codekit-prepend "../modules/advanced-video-banners/js/_avb.js";
 // @codekit-prepend "../modules/flexible-content/js/_flexible-content.js";
-// @codekit-prepend "../modules/gravity-forms/js/_gf.js";
 
 jQuery(function($) {
 
     $().loadDependencies();
     $().tooltips();
-    //$().stickyMenu();
     $().mobileMenu('nav#nav_mobile', 'left');
     $().smoothScroll();
     $().chosenSelect();
     $().footerAccordion();
     $().lazyLoad();
     $().spotlight();
+    //$().stickyMenu();
 
 	/**
 	 * Video Pop Up

@@ -7,7 +7,7 @@
       "uuidString" : "E3A06CD2-C4DD-478B-B0DB-996D30A81E10"
     }
   ],
-  "creatorBuild" : "34518",
+  "creatorBuild" : "34564",
   "files" : {
     "\/404.php" : {
       "cB" : 0,
@@ -345,6 +345,19 @@
       "oAP" : "\/header.php",
       "oF" : 0
     },
+    "\/img\/__coco-hand-iso-min.png" : {
+      "ft" : 32768,
+      "iS" : 1757070,
+      "oA" : 0,
+      "oAP" : "\/img\/__coco-hand-iso-min.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/img\/ajax-loader.gif" : {
       "ft" : 4194304,
       "iS" : 1737,
@@ -357,7 +370,7 @@
     },
     "\/img\/coco-hand-iso-min.png" : {
       "ft" : 32768,
-      "iS" : 1757070,
+      "iS" : 131932,
       "oA" : 0,
       "oAP" : "\/img\/coco-hand-iso-min.png",
       "oF" : 0,
@@ -513,7 +526,7 @@
     },
     "\/img\/logo.png" : {
       "ft" : 32768,
-      "iS" : 11327,
+      "iS" : 77527,
       "oA" : 0,
       "oAP" : "\/img\/logo.png",
       "oF" : 0,
@@ -4494,9 +4507,6 @@
       "no-new-native-nonconstructor" : {
         "active" : 0
       },
-      "no-new-object" : {
-        "active" : 0
-      },
       "no-new-symbol" : {
         "active" : 1
       },
@@ -4508,6 +4518,9 @@
       },
       "no-obj-calls" : {
         "active" : 1
+      },
+      "no-object-constructor" : {
+        "active" : 0
       },
       "no-octal" : {
         "active" : 1

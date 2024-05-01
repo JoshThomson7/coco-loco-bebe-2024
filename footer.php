@@ -56,6 +56,7 @@
 	</div><!-- #page -->
 
 	<?php wp_footer(); ?>
+	<script src="https://kit.fontawesome.com/a907a96592.js" crossorigin="anonymous"></script>
 	</body>
 
 </html>
